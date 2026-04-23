@@ -11,9 +11,9 @@ variable "fleet_management_auth" {
 
 variable "example_pipeline_matchers" {
   type        = list(string)
-  description = "Prometheus-style matchers that select which collectors receive this pipeline configuration."
+  description = "Prometheus-style matchers (double-quoted values, e.g. collector.os=~\".*\") that select which collectors receive this pipeline configuration."
   default = [
-    "collector.os=~'.*'",
+    "collector.os=~\".*\"",
   ]
 }
 

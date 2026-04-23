@@ -3,4 +3,4 @@ fleet_management_auth = "YOUR_FLEET_MANAGEMENT_INSTANCE_ID:YOUR_ACCESS_POLICY_TO
 
 # Optional overrides:
 # example_pipeline_enabled  = true
-# example_pipeline_matchers = ["env='staging'", "team='platform'"]
+# example_pipeline_matchers = ["env=\"staging\"", "team=\"platform\""]
