@@ -1,0 +1,4 @@
+// Example pipeline body — replace with your Alloy config.
+local.file "terraform_example" {
+	filename = "terraform_example.txt"
+}

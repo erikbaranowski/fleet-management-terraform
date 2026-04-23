@@ -1,0 +1,6 @@
+fleet_management_url  = "https://fleet-management-prod-XX.grafana.net"
+fleet_management_auth = "YOUR_FLEET_MANAGEMENT_INSTANCE_ID:YOUR_ACCESS_POLICY_TOKEN"
+
+# Optional overrides:
+# example_pipeline_enabled  = true
+# example_pipeline_matchers = ["env='staging'", "team='platform'"]
