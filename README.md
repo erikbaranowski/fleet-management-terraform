@@ -5,7 +5,7 @@ Example [Grafana Fleet Management](https://grafana.com/docs/grafana-cloud/send-d
 ## Prerequisites
 
 - Terraform `>= 1.5`
-- Grafana Terraform provider `~> 3.19` (Fleet Management support)
+- Grafana Terraform provider **`>= 4.35.0`** (constraint in `versions.tf`; exact build is in `.terraform.lock.hcl`)
 - A Grafana Cloud access policy token with `fleet-management:read` and `fleet-management:write` scopes
 - Fleet Management API URL and instance ID from **Connections → Collector → Fleet Management → API**
 
