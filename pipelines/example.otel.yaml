@@ -1,0 +1,17 @@
+# Example OpenTelemetry Collector configuration for Fleet Management.
+# Replace receivers/exporters/service with your real telemetry paths.
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+exporters:
+  debug:
+    verbosity: detailed
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      exporters: [debug]

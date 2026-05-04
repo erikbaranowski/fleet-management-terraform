@@ -19,6 +19,20 @@ variable "example_pipeline_matchers" {
 
 variable "example_pipeline_enabled" {
   type        = bool
-  description = "Whether the example pipeline is enabled for matched collectors."
+  description = "Whether the example Alloy pipeline is enabled for matched collectors."
+  default     = true
+}
+
+variable "example_otel_pipeline_matchers" {
+  type        = list(string)
+  description = "Matchers for the example OTel pipeline. Default expects collectors with label otel_example=\"true\"; adjust so these matchers do not overlap other pipelines in production."
+  default = [
+    "otel_example=\"true\"",
+  ]
+}
+
+variable "example_otel_pipeline_enabled" {
+  type        = bool
+  description = "Whether the example OTel pipeline is enabled for matched collectors."
   default     = true
 }
